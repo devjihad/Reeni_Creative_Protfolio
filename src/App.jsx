@@ -1,11 +1,13 @@
+import Hero from "./Container/Hero/Hero"
 import Navbar from "./Container/Navbar/Navbar"
 
 function App() {
  
 
   return (
-   <div className="bg-[#141414]">
+   <div className="bg-black1 text-white">
     <Navbar/>
+    <Hero/>
    </div>
   )
 }

@@ -3,13 +3,26 @@
 @import "tailwindcss";
 
 @theme{
-  --font-rajshani :"Rajdhani", sans-serif;
+  --font-rajdhani :"Rajdhani", sans-serif;
   --font-rubik : "Rubik", sans-serif;
-  --color-main : #FF494A
+  --color-main : #FF494A;
+  --color-black1 : #060606;
+  --color-black2:#141414;
+  --color-red1: #FF494A;
+  --color-gray1:#9F9F9F;
 }
 
 @layer utilities {
   .container{
     @apply max-w-300 mx-auto 
   }
+};
+
+.text-outline {
+  -webkit-text-stroke: 1px #FF494A; /* red-500 */
+  color: transparent;
+}
+.text-outline2 {
+  -webkit-text-stroke: 1px #9F9F9F; /* red-500 */
+  color: transparent;
 }
