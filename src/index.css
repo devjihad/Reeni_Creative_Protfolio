@@ -7,3 +7,9 @@
   --font-rubik : "Rubik", sans-serif;
   --color-main : #FF494A
 }
+
+@layer utilities {
+  .container{
+    @apply max-w-300 mx-auto 
+  }
+}

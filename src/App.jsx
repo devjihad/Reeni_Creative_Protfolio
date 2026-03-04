@@ -1,11 +1,12 @@
+import Navbar from "./Container/Navbar/Navbar"
+
 function App() {
  
 
   return (
-    <>
-     
-       <h1 className="font-rajshani">ldskfdslkfdskfs</h1>
-    </>
+   <div className="bg-[#141414]">
+    <Navbar/>
+   </div>
   )
 }
 
