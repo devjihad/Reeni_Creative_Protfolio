@@ -3,6 +3,7 @@ import FourCard from "./Container/FourCard/FourCard"
 import Hero from "./Container/Hero/Hero"
 import LatestService from "./Container/LatestService/LatestService"
 import Navbar from "./Container/Navbar/Navbar"
+import Skill from "./Container/SkillSection/Skill"
 
 function App() {
  
@@ -14,6 +15,7 @@ function App() {
     <FourCard/>
     <FiveCard/>
     <LatestService/>
+    <Skill/>
    </div>
   )
 }
