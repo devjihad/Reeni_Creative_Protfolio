@@ -1,3 +1,4 @@
+import FiveCard from "./Container/FiveCard/FiveCard"
 import FourCard from "./Container/FourCard/FourCard"
 import Hero from "./Container/Hero/Hero"
 import Navbar from "./Container/Navbar/Navbar"
@@ -10,6 +11,7 @@ function App() {
     <Navbar/>
     <Hero/>
     <FourCard/>
+    <FiveCard/>
    </div>
   )
 }
