@@ -11,7 +11,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
     return (
-        <div className='container flex justify-between text-white bg-black2 py-3'>
+        <div className='bg-black2'>
+            <div className='container flex justify-between text-white  py-3'>
             <img src={logo} alt="" className='h-10 '/>
             <ul className='flex gap-4 items-center text-[12px] font-rajdhani font-bold'>
                 <li>Home</li>
@@ -29,6 +30,7 @@ const Navbar = () => {
                 <RxHamburgerMenu className='p-1.5 bg-red1 rounded-full w-6 h-6'/>
             </div>
 
+        </div>
         </div>
     );
 };
