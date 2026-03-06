@@ -8,15 +8,15 @@ import img3 from '../../assets/blog3.png'
 import right from '../../assets/right.png'
 const PricePlan = () => {
     return (
-        <div className='container  mt-30 '>
+        <div className='container  mt-30 px-5 md:px-0 '>
             <div>
             <p className='text-[16px] text-red1 text-center font-rubik '>LATEST SERVICE</p>
-            <p className='text-[48px] font-rajdhani font-bold text-center'>Enhancing Collaboration <br /> between Remote</p>
+            <p className='text-[22px] md:text-[48px] font-rajdhani font-bold text-center'>Enhancing Collaboration <br /> between Remote</p>
             </div>
             {/* FIRST SECTION */}
 
-            <div className='mt-13 flex justify-between gap-7.5 '>
-                <div className='p-9.5 bg-cardBG rounded-xl w-102 h-119.5 mt-11'>
+            <div className='mt-13 flex flex-col md:flex-row  justify-between gap-7.5 '>
+                <div className='p-9.5 bg-cardBG rounded-xl md:w-102 h-119.5 mt-11'>
                     <p className='font-rajdhani font-bold text-[18px]'>Starter</p>
                     <p className='font-rajdhani font-bold text-[48px]'>$ 5.00</p>
                     <p className='font-rajdhani font-bold text-[18px] mb-6.5'>Per Month</p>
@@ -30,7 +30,7 @@ const PricePlan = () => {
 
                 </div>
 
-                <div className='p-9.5 bg-cardBG rounded-xl w-101 h-141'>
+                <div className='p-9.5 bg-cardBG rounded-xl md:w-101 h-141'>
                     <p className='font-rajdhani font-bold text-[18px]'>Premium</p>
                     <p className='font-rajdhani font-bold text-[48px]'>$ 230.00</p>
                     <p className='font-rajdhani font-bold text-[18px] mb-6.5'>Per Month</p>
@@ -49,7 +49,7 @@ const PricePlan = () => {
 
                 </div>
 
-                <div className='p-9.5 bg-cardBG rounded-xl w-101 h-119.5 mt-11'>
+                <div className='p-9.5 bg-cardBG rounded-xl md:w-101 h-119.5 mt-11'>
                     <p className='font-rajdhani font-bold text-[18px]'>Basic</p>
                     <p className='font-rajdhani font-bold text-[48px]'>$ 30.00</p>
                     <p className='font-rajdhani font-bold text-[18px] mb-6.5'>Per Month</p>
@@ -68,10 +68,10 @@ const PricePlan = () => {
             <div>
                 <div className='mt-30'>
                     <p className='text-[16px] text-red1 text-center font-rubik '>LATEST SERVICE</p>
-                    <p className='text-[48px] font-rajdhani font-bold text-center'>Enhancing Collaboration <br /> between Remote</p>
+                    <p className='text-[22px] md:text-[48px] font-rajdhani font-bold text-center'>Enhancing Collaboration <br className='hidden md:inline'/> between Remote</p>
                 </div>
 
-                 <div className='flex gap-7.5 mt-12.5'>
+                 <div className='flex flex-col md:flex-row gap-7.5 mt-12.5'>
                     <div className='p-9.5 bg-cardBG rounded-xl'>
                         <img src={testimonial} alt=""  className='mb-10.5'/>
                         <p className='text-[18px] font-rubik text-gray1'>A personal portfolio is a curated collection of an individual's professional work, showcasing their skilA personal portfolio is acurated collection of an individual's professional work,showcasing their skills,</p>
@@ -93,9 +93,9 @@ const PricePlan = () => {
             <div className='py-30'>
                 <div>
                     <p className='text-[16px] text-red1 text-center font-rubik '>Blog & News</p>
-                    <p className='text-[48px] font-rajdhani font-bold text-center'>Elevating Personal Branding the <br />through Powerful Portfolios</p>
+                    <p className='text-[22px] md:text-[48px] font-rajdhani font-bold text-center'>Elevating Personal Branding the <br className='hidden md:inline' />through Powerful Portfolios</p>
                 </div>
-                <div className='mt-12 flex gap-7.5'>
+                <div className='mt-12 flex flex-col md:flex-row gap-7.5'>
                     <div className='border border-gray-700 rounded-3xl'>
                         <img src={img1} alt="" />
                         <h4 className='text-[24px] font-rajdhani font-bold p-5 '>Lets bring your ideas to life! <br />Contact me, and lets</h4>

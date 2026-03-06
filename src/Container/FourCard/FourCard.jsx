@@ -5,7 +5,7 @@ import img4 from "../../assets/4.png"
 
 const FourCard = () => {
   return (
-    <div className="container flex justify-between gap-7 mt-7.5 mb-22.5">
+    <div className=" md:container flex flex-col md:flex-row justify-between items-center gap-7 mt-7.5 mb-22.5">
         <div  className="w-74 h-56 border border-red-300 py-10.25 rounded-xl">
             <img src={img1} alt="" className="mx-auto w-15.5 h-12.5 mb-7 "/>
             <h4 className=" text-center text-[24px] font-bold font-rajdhani mb-2">Web Design </h4>

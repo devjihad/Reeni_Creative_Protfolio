@@ -11,16 +11,16 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const LatestProtfolio = () => {
     return (
-        <div className='bg-cardBG rounded-xl'>
-        <div className='container '>
+        <div className='bg-cardBG rounded-xl  '>
+        <div className='md:container px-5 md:px-0'>
 
-            <div className='pt-25'>
+            <div className='pt-20  md:pt-25'>
             <p className='text-[16px] text-red1 text-center font-rubik '>LATEST PROTFOLIO</p>
-            <p className='text-[48px] font-rajdhani font-bold text-center'>Transforming Ideas into Exceptional</p>
-            <p className='text-[16px] font-rubik text-gray1 text-center mb-7.5 '>Business consulting consultants provide expert advice and guida businesses to help <br />them improve their performance, efficiency, and organizational</p>
+            <p className='text-[22px] md:text-[48px] font-rajdhani font-bold text-center'>Transforming Ideas into Exceptional</p>
+            <p className='text-[16px] font-rubik text-gray1 text-center mb-7.5 '>Business consulting consultants provide expert advice and guida businesses to help <br className='hidden md:inline'/>them improve their performance, efficiency, and organizational</p>
             </div>
 
-            <div className='grid grid-cols-2 gap-12.5 mt-15'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-12.5 mt-15'>
                 <div className=''>
                     <img src={img1} alt="" className='p-5 border border-gray-600 rounded-xl'/>
                     
@@ -56,10 +56,10 @@ const LatestProtfolio = () => {
 
             <div className='mt-30 '>
             <p className='text-[16px] text-red1  font-rubik '>MY SKILL</p>
-            <p className='text-[48px] font-rajdhani font-bold '>Elevated Designs Personalized <br />the best Experiences</p> 
+            <p className='text-[22px] md:text-[48px] font-rajdhani font-bold '>Elevated Designs Personalized <br />the best Experiences</p> 
 
             <div className='pb-25'>
-                <div className='pt-10.75 pb-8 px-20 hover:bg-red1 flex justify-between items-center rounded-lg '>
+                <div className='pt-10.75 pb-8 md:px-20 hover:bg-red1 flex flex-col md:flex-row justify-between items-center rounded-lg '>
                     <img src={vector} alt="" className='h-17.5 w-17.5 border border-gray-700 p-4 rounded-full'/>
                     <div>
                         <p className='text-[32px] font-rajdhani font-bold '>UI/UX DESIGN</p>
@@ -69,7 +69,7 @@ const LatestProtfolio = () => {
                     <p className='flex items-center gap-1 font-rajdhani'>READ MORE <IoIosArrowForward/></p>
                 </div>
 
-                <div className='pt-10.75 pb-8 px-20 hover:bg-red1 flex justify-between items-center rounded-lg my-7.5'>
+                <div className='pt-10.75 pb-8 md:px-20 hover:bg-red1 flex flex-col md:flex-row justify-between items-center rounded-lg my-7.5'>
                     <img src={vector1} alt="" className='h-17.5 w-17.5 border border-gray-700 p-4 rounded-full'/>
                     <div>
                         <p className='text-[32px] font-rajdhani font-bold '>UI/UX DESIGN</p>
@@ -79,7 +79,7 @@ const LatestProtfolio = () => {
                     <p className='flex items-center gap-1 font-rajdhani'>READ MORE <IoIosArrowForward/></p>
                 </div>
                 
-                <div className='pt-10.75 pb-8 px-20 hover:bg-red1 flex justify-between items-center rounded-lg '>
+                <div className='pt-10.75 pb-8 md:px-20 hover:bg-red1 flex flex-col md:flex-row justify-between items-center rounded-lg '>
                     <img src={vector2} alt="" className='h-17.5 w-17.5 border border-gray-700 p-4 rounded-full'/>
                     <div>
                         <p className='text-[32px] font-rajdhani font-bold '>UI/UX DESIGN</p>

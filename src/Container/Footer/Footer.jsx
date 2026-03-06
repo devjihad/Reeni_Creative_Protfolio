@@ -11,13 +11,13 @@ import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
     return (
         <div className='bg-cardBG'>
-            <div className='container flex py-30'>
-                <div className='w-1/2'>
+            <div className='container flex flex-col md:flex-row py-30 px-5 md:px-0'>
+                <div className='w-full md:w-1/2'>
                     <img src={logo} alt="" />
                     <h4 className='text-[50px] font-rajdhani font-bold mt-5.5'>Get Ready <span className='font-normal'> to <br /> Create Great </span></h4>
                 </div>
 
-                <div className='w-1/2  flex justify-between'>
+                <div className='w-full md:w-1/2  flex flex-col md:flex-row justify-between'>
                     <div >
                         <h4 className='font-rajdhani font-bold text-[24px] mb-10'>Quick Link </h4>
                         <p className='text-[16px] font-rubik mb-2'>About Me </p>

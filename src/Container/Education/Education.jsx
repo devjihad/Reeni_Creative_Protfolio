@@ -4,10 +4,10 @@ import leftImg from '../../assets/Container.png'
 import team from '../../assets/Tpm Our Supported Company Area Start.png'
 const Education = () => {
     return (
-        <div className='container mt-30'>
+        <div className='container mt-30 px-5 md:px-0'>
             <h4 className='mb-7.5 text-[32px] font-rajdhani font-bold flex items-center gap-5'>Education <img src={line} alt="" /></h4>
 
-            <div className='grid grid-cols-2 gap-7.5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-7.5'>
                 <div className='px-9.5 py-12 bg-cardBG rounded-xl'>
                     <p className='text-[16px] font-rubik'>Trainer Marketing</p>
                     <p className='text-[18px] font-rajdhani my-1.5'>2005-2009</p>
@@ -34,12 +34,12 @@ const Education = () => {
 
             </div>
 
-            <div className='flex gap-7.5 mt-18.25'>
-                <div className='w-1/2'>
+            <div className='flex flex-col md:flex-row gap-7.5 mt-18.25'>
+                <div className='w-full md:w-1/2'>
                     <img src={leftImg} alt=""/>
                 </div>
 
-                <div className=' w-1/2 pl-10 pr-34.5'>
+                <div className='w-full md:w-1/2 md:pl-10 md:pr-34.5'>
                     <h4 className=' text-[32px] font-rajdhani font-bold flex items-center gap-5'>Experience <img src={line} alt="" /></h4>
                     <div className='my-7.5'>
                         <p className='text-[16px] text-red1 font-rubik font-medium'>experience</p>
@@ -56,7 +56,7 @@ const Education = () => {
                     </div>
                 </div>
             </div>
-            <img src={team} alt=""  className='py-30 '/>
+            <img src={team} alt=""  className='py-30 hidden md:inline'/>
         </div>
     );
 };
