@@ -90,7 +90,7 @@ const PricePlan = () => {
             </div>
 
             {/* THIRD SECTION  */}
-            <div className='mt-30'>
+            <div className='py-30'>
                 <div>
                     <p className='text-[16px] text-red1 text-center font-rubik '>Blog & News</p>
                     <p className='text-[48px] font-rajdhani font-bold text-center'>Elevating Personal Branding the <br />through Powerful Portfolios</p>

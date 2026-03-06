@@ -24,7 +24,7 @@ const Hero = () => {
             <h4 className="font-rubik mb-5">About Me </h4>
             <p className="text-gray1 font-rubik text-[16px]  ">A personal <span className="text-red1">portfolio</span> is a collection of to <br />your work, that is achievements, and a <br />skills that <span className="text-red1">web design</span > highlights in your</p>
 
-            <p>Find me on </p>
+            <p className="mt-10 font-rajdhani mb-2">Find me on </p>
              <div className='flex items-center gap-2 '>
                 <FaInstagram className='p-1.5 bg-stone-800 rounded-full w-6 h-6'/>
                 <TfiFacebook className='p-1.5 bg-stone-800 rounded-full w-6 h-6'/>
