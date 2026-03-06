@@ -5,6 +5,7 @@ import Hero from "./Container/Hero/Hero"
 import LatestProtfolio from "./Container/LatestProtfolio/LatestProtfolio"
 import LatestService from "./Container/LatestService/LatestService"
 import Navbar from "./Container/Navbar/Navbar"
+import PricePlan from "./Container/PricePlan/PricePlan"
 import Skill from "./Container/SkillSection/Skill"
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <Skill/>
     <Education/>
     <LatestProtfolio/>
+    <PricePlan/>
    </div>
   )
 }

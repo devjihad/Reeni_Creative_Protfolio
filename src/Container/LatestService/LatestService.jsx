@@ -3,9 +3,7 @@ import rightImg from '../../assets/Margin.png'
 const LatestService = () => {
     return (
         <div className='container mt-30 '>
-            <p className='text-[16px] text-red1 text-center font-rubik '>LATEST SERVICE</p>
-            <p className='text-[48px] font-rajdhani font-bold text-center'>Inspiring The World One Project</p>
-            <p className='text-[16px] font-rubik text-gray1 text-center mb-7.5 '>Business consulting consultants provide expert advice and guida businesses to help <br /> them improve their performance, efficiency, and organizational</p>
+            
 
             <div className='flex justify-be'>
                 <div className='w-1/2 '>

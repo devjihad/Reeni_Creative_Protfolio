@@ -11,7 +11,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const LatestProtfolio = () => {
     return (
-        <div className='bg-cardBG'>
+        <div className='bg-cardBG rounded-xl'>
         <div className='container '>
 
             <div className='pt-25'>
