@@ -56,7 +56,7 @@ const Education = () => {
                     </div>
                 </div>
             </div>
-            <img src={team} alt=""  className='mt-30 '/>
+            <img src={team} alt=""  className='py-30 '/>
         </div>
     );
 };
