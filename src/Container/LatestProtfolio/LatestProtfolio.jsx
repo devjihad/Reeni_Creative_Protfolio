@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { version } from 'react';
 import img1 from '../../assets/Container1.png'
 import img2 from '../../assets/Container2.png'
 import img3 from '../../assets/Container3.png'
 import img4 from '../../assets/Container4.png'
 import icon from '../../assets/Link.png'
+import vector from '../../assets/Vector.png'
+import vector1 from '../../assets/Vector-1.png'
+import vector2 from '../../assets/Vector-2.png'
+import { IoIosArrowForward } from "react-icons/io";
+
 const LatestProtfolio = () => {
     return (
         <div className='bg-cardBG'>
@@ -47,6 +52,43 @@ const LatestProtfolio = () => {
                     
                 </div>
 
+            </div>
+
+            <div className='mt-30 '>
+            <p className='text-[16px] text-red1  font-rubik '>MY SKILL</p>
+            <p className='text-[48px] font-rajdhani font-bold '>Elevated Designs Personalized <br />the best Experiences</p> 
+
+            <div className='pb-25'>
+                <div className='pt-10.75 pb-8 px-20 hover:bg-red1 flex justify-between items-center rounded-lg '>
+                    <img src={vector} alt="" className='h-17.5 w-17.5 border border-gray-700 p-4 rounded-full'/>
+                    <div>
+                        <p className='text-[32px] font-rajdhani font-bold '>UI/UX DESIGN</p>
+                        <p className='text-[18px] font-rajdhani'>21 Done</p>
+                    </div>
+                    <p className='font-rubik text-[16px] leading-7.5'>My work is driven by the belief that thoughtful design and <br />strategic planning can empower brands strategic planning <br />can empower brands</p>
+                    <p className='flex items-center gap-1 font-rajdhani'>READ MORE <IoIosArrowForward/></p>
+                </div>
+
+                <div className='pt-10.75 pb-8 px-20 hover:bg-red1 flex justify-between items-center rounded-lg my-7.5'>
+                    <img src={vector1} alt="" className='h-17.5 w-17.5 border border-gray-700 p-4 rounded-full'/>
+                    <div>
+                        <p className='text-[32px] font-rajdhani font-bold '>UI/UX DESIGN</p>
+                        <p className='text-[18px] font-rajdhani'>21 Done</p>
+                    </div>
+                    <p className='font-rubik text-[16px] leading-7.5'>My work is driven by the belief that thoughtful design and <br />strategic planning can empower brands strategic planning <br />can empower brands</p>
+                    <p className='flex items-center gap-1 font-rajdhani'>READ MORE <IoIosArrowForward/></p>
+                </div>
+                
+                <div className='pt-10.75 pb-8 px-20 hover:bg-red1 flex justify-between items-center rounded-lg '>
+                    <img src={vector2} alt="" className='h-17.5 w-17.5 border border-gray-700 p-4 rounded-full'/>
+                    <div>
+                        <p className='text-[32px] font-rajdhani font-bold '>UI/UX DESIGN</p>
+                        <p className='text-[18px] font-rajdhani'>21 Done</p>
+                    </div>
+                    <p className='font-rubik text-[16px] leading-7.5'>My work is driven by the belief that thoughtful design and <br />strategic planning can empower brands strategic planning <br />can empower brands</p>
+                    <p className='flex items-center gap-1 font-rajdhani'>READ MORE <IoIosArrowForward/></p>
+                </div>
+            </div>
             </div>
             
         </div>
