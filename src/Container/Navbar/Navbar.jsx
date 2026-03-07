@@ -31,8 +31,8 @@ const Navbar = () => {
     return (
         <>
         {/* // LARGE DEVICE */}
-        <div className={`hidden md:inline ${togglevalue ? "bg-black1 text-white " :"bg-[#F4F4F4] text-black"}`}>
-            <div className='px-5 md:px-0 container flex justify-between   py-3  '>
+        <div className={` ${togglevalue ? "bg-black1 text-white " :"bg-[#F4F4F4] text-black"}`}>
+            <div className='hidden  px-5 md:px-0 container md:flex justify-between   py-3  '>
             {
                 togglevalue? <img src={logo} alt="" className='h-10 '/>: <img src={blacklogo} alt="" className='h-10 '/>
             }
