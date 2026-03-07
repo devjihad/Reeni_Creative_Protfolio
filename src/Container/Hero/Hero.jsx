@@ -5,11 +5,14 @@ import { FaInstagram } from "react-icons/fa6";
 import { TfiFacebook } from "react-icons/tfi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { useContext } from "react";
+import { contextData } from "../../Context/Context";
 const Hero = () => {
+    const {togglevalue, settogglevalue} = useContext(contextData)
     return (
-    <div className=" md:container  relative mb-22.5 px-5 md:px-0">
+    <div className=" container  relative mb-22.5 px-5 md:px-0">
          <div >
-            <div className="md:w-170 mx-auto md:flex md:justify-center relative z-20 " style={{backgroundImage:`url(${bg})`}} >
+            <div className="md:w-170 mx-auto md:flex md:justify-center relative z-20 "  style={{backgroundImage:`url(${bg})`}} >
                 <img src={Mainimage} alt="" className="px-5 md:px-0 md:w-155 md:h-200  "/>
             </div>
             <h2 className="text-[90px] w-175 font-bold tracking-widest text-outline font-rajdhani absolute  top-169 left-1/2 -translate-x-1/2 -tranlate-y-1/2 z-30 hidden md:inline ">WEB DESIGN</h2><br />
@@ -26,10 +29,10 @@ const Hero = () => {
 
             <p className="mt-10 font-rajdhani mb-2">Find me on </p>
              <div className='flex items-center gap-2 '>
-                <FaInstagram className='p-1.5 bg-stone-800 rounded-full w-6 h-6'/>
-                <TfiFacebook className='p-1.5 bg-stone-800 rounded-full w-6 h-6'/>
-                <FaLinkedinIn className='p-1.5 bg-stone-800 rounded-full w-6 h-6'/>
-                <FaTwitter  className='p-1.5 bg-stone-800 rounded-full w-6 h-6'/>
+                <FaInstagram className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-6 h-6' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
+                <TfiFacebook className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-6 h-6' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
+                <FaLinkedinIn className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-6 h-6' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
+                <FaTwitter  className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-6 h-6' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
                
              </div>
         </div>

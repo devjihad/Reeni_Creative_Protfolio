@@ -1,3 +1,4 @@
+import { useContext } from "react"
 import Education from "./Container/Education/Education"
 import FiveCard from "./Container/FiveCard/FiveCard"
 import Footer from "./Container/Footer/Footer"
@@ -8,12 +9,13 @@ import LatestService from "./Container/LatestService/LatestService"
 import Navbar from "./Container/Navbar/Navbar"
 import PricePlan from "./Container/PricePlan/PricePlan"
 import Skill from "./Container/SkillSection/Skill"
+import { contextData } from "./Context/Context"
 
 function App() {
- 
+ const {togglevalue} =useContext(contextData)
 
   return (
-   <div className="bg-black1 text-white">
+   <div className={`${togglevalue ? "bg-black text-white " :"bg-white text-black"}`}>
     <Navbar/>
     <Hero/>
     <FourCard/>
