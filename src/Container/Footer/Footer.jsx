@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../../assets/logo.png'
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
@@ -7,10 +7,12 @@ import { FaInstagram } from "react-icons/fa6";
 import { TfiFacebook } from "react-icons/tfi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { contextData } from '../../Context/Context';
 
 const Footer = () => {
+    const {togglevalue, settogglevalue} = useContext(contextData)
     return (
-        <div className='bg-cardBG'>
+        <div className={`${togglevalue? 'bg-cardBG':' bg-[#F4F4F4]'}`}>
             <div className='container flex flex-col md:flex-row py-30 px-5 md:px-0'>
                 <div className='w-full md:w-1/2'>
                     <img src={logo} alt="" />
@@ -33,10 +35,11 @@ const Footer = () => {
                         <p className='flex gap-2 items-center mb-4'><FaLocationDot/> Dhanmondi 15, Dhaka</p>
                         <p className='flex gap-2 items-center mb-6'><FaPhone/> 01966078899</p>
                         <div className='flex items-center gap-2 '>
-                            <FaInstagram className='p-1.5 bg-stone-800 rounded-full w-6 h-6'/>
-                             <TfiFacebook className='p-1.5 bg-stone-800 rounded-full w-6 h-6'/>
-                            <FaLinkedinIn className='p-1.5 bg-stone-800 rounded-full w-6 h-6'/>
-                            <FaTwitter  className='p-1.5 bg-stone-800 rounded-full w-6 h-6'/>
+                            <FaInstagram className={` rounded-full w-8 h-8 p-1.5 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
+                            <TfiFacebook className={` rounded-full w-8 h-8 p-1.5 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
+                            <FaLinkedinIn className={` rounded-full w-8 h-8 p-1.5 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
+                            <FaTwitter  className={` rounded-full w-8 h-8 p-1.5 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
+               
                         </div>
                     </div>
                 </div>

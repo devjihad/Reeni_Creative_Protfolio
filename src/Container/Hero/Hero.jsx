@@ -29,10 +29,10 @@ const Hero = () => {
 
             <p className="mt-10 font-rajdhani mb-2">Find me on </p>
              <div className='flex items-center gap-2 '>
-                <FaInstagram className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-6 h-6' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
-                <TfiFacebook className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-6 h-6' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
-                <FaLinkedinIn className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-6 h-6' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
-                <FaTwitter  className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-6 h-6' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
+                <FaInstagram className={` rounded-full w-8 h-8 p-1.5 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
+                <TfiFacebook className={` rounded-full w-8 h-8 p-1.5 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
+                <FaLinkedinIn className={` rounded-full w-8 h-8 p-1.5 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
+                <FaTwitter  className={` rounded-full w-8 h-8 p-1.5 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
                
              </div>
         </div>

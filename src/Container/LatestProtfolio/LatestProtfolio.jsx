@@ -1,4 +1,4 @@
-import React, { version } from 'react';
+import React, { useContext, version } from 'react';
 import img1 from '../../assets/Container1.png'
 import img2 from '../../assets/Container2.png'
 import img3 from '../../assets/Container3.png'
@@ -8,11 +8,13 @@ import vector from '../../assets/Vector.png'
 import vector1 from '../../assets/Vector-1.png'
 import vector2 from '../../assets/Vector-2.png'
 import { IoIosArrowForward } from "react-icons/io";
+import { contextData } from '../../Context/Context';
 
 const LatestProtfolio = () => {
+    const {togglevalue, settogglevalue} = useContext(contextData)
     return (
-        <div className='bg-cardBG rounded-xl  '>
-        <div className='md:container px-5 md:px-0'>
+        <div className={` rounded-xl ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4]'}`}>
+        <div className='container px-5 md:px-0'>
 
             <div className='pt-20  md:pt-25'>
             <p className='text-[16px] text-red1 text-center font-rubik '>LATEST PROTFOLIO</p>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { IoArrowForward } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
 import testimonial from '../../assets/testimonial-icon.png'
@@ -6,7 +6,9 @@ import img1 from '../../assets/blog1.png'
 import img2 from '../../assets/blog2.png'
 import img3 from '../../assets/blog3.png'
 import right from '../../assets/right.png'
+import { contextData } from '../../Context/Context';
 const PricePlan = () => {
+    const {togglevalue, settogglevalue} = useContext(contextData)
     return (
         <div className='container  mt-30 px-5 md:px-0 '>
             <div>
@@ -16,7 +18,7 @@ const PricePlan = () => {
             {/* FIRST SECTION */}
 
             <div className='mt-13 flex flex-col md:flex-row  justify-between gap-7.5 '>
-                <div className='p-9.5 bg-cardBG rounded-xl md:w-102 h-119.5 mt-11'>
+                <div className={`p-9.5 rounded-xl md:w-102 h-119.5 mt-11 ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] border-r-2 border-b-2 border-red1'}`}>
                     <p className='font-rajdhani font-bold text-[18px]'>Starter</p>
                     <p className='font-rajdhani font-bold text-[48px]'>$ 5.00</p>
                     <p className='font-rajdhani font-bold text-[18px] mb-6.5'>Per Month</p>
@@ -30,7 +32,7 @@ const PricePlan = () => {
 
                 </div>
 
-                <div className='p-9.5 bg-cardBG rounded-xl md:w-101 h-141'>
+                <div className={`p-9.5  rounded-xl md:w-101 h-141 ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] border-r-2 border-b-2 border-red1'}`}>
                     <p className='font-rajdhani font-bold text-[18px]'>Premium</p>
                     <p className='font-rajdhani font-bold text-[48px]'>$ 230.00</p>
                     <p className='font-rajdhani font-bold text-[18px] mb-6.5'>Per Month</p>
@@ -49,7 +51,7 @@ const PricePlan = () => {
 
                 </div>
 
-                <div className='p-9.5 bg-cardBG rounded-xl md:w-101 h-119.5 mt-11'>
+                <div className={`p-9.5 rounded-xl md:w-102 h-119.5 mt-11 ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] border-r-2 border-b-2 border-red1'}`}>
                     <p className='font-rajdhani font-bold text-[18px]'>Basic</p>
                     <p className='font-rajdhani font-bold text-[48px]'>$ 30.00</p>
                     <p className='font-rajdhani font-bold text-[18px] mb-6.5'>Per Month</p>
@@ -72,14 +74,14 @@ const PricePlan = () => {
                 </div>
 
                  <div className='flex flex-col md:flex-row gap-7.5 mt-12.5'>
-                    <div className='p-9.5 bg-cardBG rounded-xl'>
+                    <div className={`p-9.5 rounded-xl  ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] '}`}>
                         <img src={testimonial} alt=""  className='mb-10.5'/>
                         <p className='text-[18px] font-rubik text-gray1'>A personal portfolio is a curated collection of an individual's professional work, showcasing their skilA personal portfolio is acurated collection of an individual's professional work,showcasing their skills,</p>
                         <p className='text-[18px] font-rajdhani mt-9'>Cameron Willianson</p>
                         <p className='text-[14px] text-gray1 font-rubik mt-3'>UI/UX Designer</p>
                     </div>
 
-                    <div className='p-9.5 bg-cardBG rounded-xl'>
+                    <div className={`p-9.5 rounded-xl  ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] '}`}>
                         <img src={testimonial} alt=""  className='mb-10.5'/>
                         <p className='text-[18px] font-rubik text-gray1'>A personal portfolio is a curated collection of an individual's professional work, showcasing their skilA personal portfolio is acurated collection of an individual's professional work,showcasing their skills,</p>
                         <p className='text-[18px] font-rajdhani mt-9'>Lasle Alexender</p>
