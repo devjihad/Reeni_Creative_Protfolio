@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import logo from '../../assets/logo.png'
+import blacklogo from '../../assets/blacklogo.png'
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
@@ -15,7 +16,10 @@ const Footer = () => {
         <div className={`${togglevalue? 'bg-cardBG':' bg-[#F4F4F4]'}`}>
             <div className='container flex flex-col md:flex-row py-30 px-5 md:px-0'>
                 <div className='w-full md:w-1/2'>
-                    <img src={logo} alt="" />
+
+                    {
+                         togglevalue? <img src={logo} alt="" className='h-10 '/>: <img src={blacklogo} alt="" className='h-10 '/>
+                    }
                     <h4 className='text-[50px] font-rajdhani font-bold mt-5.5'>Get Ready <span className='font-normal'> to <br /> Create Great </span></h4>
                 </div>
 

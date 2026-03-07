@@ -32,9 +32,9 @@ const Navbar = () => {
         <>
         {/* // LARGE DEVICE */}
         <div className={` ${togglevalue ? "bg-black1 text-white " :"bg-[#F4F4F4] text-black"}`}>
-            <div className='hidden  px-5 md:px-0 container md:flex justify-between   py-3  '>
+            <div className='hidden  px-5 md:px-0 container md:flex justify-between   py-4.75  '>
             {
-                togglevalue? <img src={logo} alt="" className='h-10 '/>: <img src={blacklogo} alt="" className='h-10 '/>
+                togglevalue? <img src={logo} alt="" className='h-10 w-30.25 '/>: <img src={blacklogo} alt="" className='h-10 '/>
             }
             <ul className='flex  gap-4 items-center text-[16px] font-rajdhani font-bold '>
                 <li>Home</li>
@@ -45,11 +45,11 @@ const Navbar = () => {
                 <li>Contact</li>
             </ul>
             <div className=' hidden md:flex items-center gap-2 '>
-                <FaInstagram className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-8 h-8' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
-                <TfiFacebook className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-8 h-8' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
-                <FaLinkedinIn className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-8 h-8' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
-                <FaTwitter className={`${togglevalue ? 'p-1.5 bg-stone-800 rounded-full w-8 h-8' : 'p-1.5 bg-gray-200 rounded-full w-6 h-6'}`}/>
-                <div className={` ${togglevalue ? 'p-2 bg-stone-800 rounded-full w-8 h-8' : 'p-2 bg-gray-200 rounded-full w-8 h-8'}`}>
+                <FaInstagram className={`${togglevalue ? 'p-2.5 bg-stone-800 rounded-full w-10 h-10' : 'p-2.5 bg-gray-200 rounded-full w-10 h-10'}`}/>
+                <TfiFacebook className={`${togglevalue ? 'p-2.5 bg-stone-800 rounded-full w-10 h-10' : 'p-2.5 bg-gray-200 rounded-full w-10 h-10'}`}/>
+                <FaLinkedinIn className={`${togglevalue ? 'p-2.5 bg-stone-800 rounded-full w-10 h-10' : 'p-2.5 bg-gray-200 rounded-full w-10 h-10'}`}/>
+                <FaTwitter className={`${togglevalue ? 'p-2.5 bg-stone-800 rounded-full w-10 h-10' : 'p-2.5 bg-gray-200 rounded-full w-10 h-10'}`}/>
+                <div className={` ${togglevalue ? 'p-2.5 bg-stone-800 rounded-full w-10 h-10' : 'p-2.5 bg-gray-200 rounded-full w-10 h-10'}`}>
                     {
                         togglevalue? <IoSunnySharp onClick={()=>togglelight()}/>: <BsMoonStarsFill onClick={()=>toggledark()}/>
                     }

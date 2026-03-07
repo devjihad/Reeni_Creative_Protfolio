@@ -25,7 +25,7 @@ function App() {
     <Education/>
     <LatestProtfolio/>
     <PricePlan/>
-    <Footer/>
+    {/* <Footer/> */}
    </div>
   )
 }

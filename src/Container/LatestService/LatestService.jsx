@@ -12,7 +12,7 @@ const LatestService = () => {
             <p className='text-[16px] font-rubik text-gray1 text-center mb-7.5 '>Business consulting consultants provide expert advice and guida businesses to help <br className='hidden md:inline' />them improve their performance, efficiency, and organizational</p>
             </div>
 
-            <div className='flex flex-col md:flex-row gap-5 md:gap-0'>
+            <div className='flex flex-col md:flex-row gap-5 md:gap-0 mt-15'>
                 <div className='w-full md:w-1/2 '>
                 <div className={`py-[34px] px-[38px] rounded-xl mb-5 ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] border-r-2 border-b-2 border-red1'}`}>
                     <h4 className='mb-[22px] text-[24px] font-rajdhani font-bold'> 01.A Portfolio of Creativity</h4>

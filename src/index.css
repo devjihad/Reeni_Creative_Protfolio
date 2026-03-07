@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
 @theme{
-  --font-rajdhani :"Rajdhani", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
   --font-rubik : "Rubik", sans-serif;
   --color-main : #FF494A;
   --color-black1 : #060606;
@@ -16,7 +16,7 @@
 
 @layer utilities {
   .container{
-    @apply max-w-300 mx-auto 
+    @apply max-w-326.25 mx-auto 
   }
 };
 
