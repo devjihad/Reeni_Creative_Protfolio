@@ -7,7 +7,7 @@ const FiveCard = () => {
         <div className='container mt-30 flex flex-col md:flex-row px-5 md:px-0 gap-7.5'>
             <div className={`px-10 pt-9 pb-12.75  md:w-1/2 rounded-xl  ${togglevalue? 'bg-gradient-to-br from-cardBG from-60% to-[#FF494A] to-30':' bg-[#F4F4F4]'}`}>
                 <div className='md:flex gap-16.25 items-center py-5 md:py-9.75 md:pb-16 md:pr-12.75'>
-                    <h3 className='text-[60px] md:text-[167px] font-bold text-red1 leading-20 md:leading-0'>2.5 </h3>
+                    <h3 className='text-[60px] md:text-[167px] font-bold text-red1 leading-20 md:leading-0'>25 </h3>
                     <p className='text-[26px] md:text-[41px] font-rajdhani font-bold'>Years of <br className='hidden md:inline'/>Experience</p>
                 </div>
                 <p>Business consulting consultants provide expert advice and guida the <br className='hidden md:inline'/> a businesses to help theme their performance efficiency</p>
