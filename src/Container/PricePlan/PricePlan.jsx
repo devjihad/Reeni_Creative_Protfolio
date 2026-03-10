@@ -24,47 +24,47 @@ const PricePlan = () => {
                 <div className={`p-9.5 rounded-xl md:w-102 h-119.5 mt-11 ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] border-r-2 border-b-2 border-red1'}`}>
                     <p className='font-rajdhani font-bold text-[18px]'>Starter</p>
                     <p className='font-rajdhani font-bold text-[48px]'>$ 5.00</p>
-                    <p className='font-rajdhani font-bold text-[18px] mb-6.5'>Per Month</p>
-                    <hr className='text-gray-700'/>
+                    <p className='font-rajdhani font-bold text-[18px] mb-17'>Per Month</p>
+                
 
-                    <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 mt-11'><img src={right} alt="" /> 5 Social Media Account</p>
-                    <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> Free Platform Access</p>
-                    <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> 24/7 Support</p>
+                    <p className={`text-[16px] font-rubik flex items-center gap-2 mb-4 ${togglevalue?'text-gray1':'text-gray2'}`}><img src={right} alt="" /> 5 Social Media Account</p>
+                    <p className={`text-[16px] font-rubik flex items-center gap-2 mb-4 ${togglevalue?'text-gray1':'text-gray2'}`}><img src={right} alt="" /> Free Platform Access</p>
+                    <p className={`text-[16px] font-rubik flex items-center gap-2 mb-9.5 ${togglevalue?'text-gray1':'text-gray2'}`}><img src={right} alt="" /> 24/7 Support</p>
 
-                    <button className={`flex items-center gap-1 py-2 px-4 rounded-4xl border border-gray-700  hover:bg-red1 hover:text-white hover:border-0  ${togglevalue? 'text-gray1 hover:text-white':'text-black hover:text-white border-gray1'}`}>Get Started <IoArrowForward/></button>
+                    <button className={`flex items-center gap-1 py-2 px-4 rounded-4xl border-2 border-gray-700  hover:bg-red1 hover:text-white hover:border-0  ${togglevalue? 'text-gray1 hover:text-white':'text-black hover:text-white border-gray1'}`}>Get Started <IoArrowForward/></button>
 
                 </div>
 
                 <div className={`p-9.5  rounded-xl md:w-101 h-141 ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] border-r-2 border-b-2 border-red1'}`}>
                     <p className='font-rajdhani font-bold text-[18px]'>Premium</p>
                     <p className='font-rajdhani font-bold text-[48px]'>$ 230.00</p>
-                    <p className='font-rajdhani font-bold text-[18px] mb-6.5'>Per Month</p>
-                    <hr className='text-gray-700'/>
+                    <p className='font-rajdhani font-bold text-[18px] mb-17'>Per Month</p>
+                    
 
-                     <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 mt-11'><img src={right} alt="" /> 5 Social Media Account</p>
+                     <p className={`text-[16px] font-rubik flex items-center gap-2 mb-4 ${togglevalue?'text-gray1':'text-gray2'}`}><img src={right} alt="" /> 5 Social Media Account</p>
 
-                    <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> Free Platform Access</p>
+                    <p className={`text-[16px] font-rubik flex items-center gap-2 mb-4 ${togglevalue?'text-gray1':'text-gray2'}`}><img src={right} alt="" /> Free Platform Access</p>
 
-                    <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> 24/7 Support</p>
+                    <p className={`text-[16px] font-rubik flex items-center gap-2 mb-4 ${togglevalue?'text-gray1':'text-gray2'}`}><img src={right} alt="" /> 24/7 Support</p>
 
-                    <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> Life Time Support </p>
-                    <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> Marketing Platform</p>
+                    <p className={`text-[16px] font-rubik flex items-center gap-2 mb-4 ${togglevalue?'text-gray1':'text-gray2'}`}><img src={right} alt="" /> Life Time Support </p>
+                    <p className={`text-[16px] font-rubik flex items-center gap-2 mb-9.5 ${togglevalue?'text-gray1':'text-gray2'}`}><img src={right} alt="" /> Marketing Platform</p>
 
-                    <button className={`flex items-center gap-1 py-2 px-4 rounded-4xl border border-gray-700  hover:bg-red1 hover:text-white hover:border-0  ${togglevalue? 'text-gray1 hover:text-white':'text-black hover:text-white border-gray1'}`}>Get Started <IoArrowForward/></button>
+                    <button className={`flex items-center gap-1 py-2 px-4 rounded-4xl border-2 border-gray-700  hover:bg-red1 hover:text-white hover:border-0  ${togglevalue? 'text-gray1 hover:text-white':'text-black hover:text-white border-gray1'}`}>Get Started <IoArrowForward/></button>
 
                 </div>
 
                 <div className={`p-9.5 rounded-xl md:w-102 h-119.5 mt-11 ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] border-r-2 border-b-2 border-red1'}`}>
                     <p className='font-rajdhani font-bold text-[18px]'>Basic</p>
                     <p className='font-rajdhani font-bold text-[48px]'>$ 30.00</p>
-                    <p className='font-rajdhani font-bold text-[18px] mb-6.5'>Per Month</p>
-                    <hr className='text-gray-700'/>
+                    <p className='font-rajdhani font-bold text-[18px] mb-17'>Per Month</p>
+                    
 
-                   <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 mt-11'><img src={right} alt="" /> 5 Social Media Account</p>
-                    <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> Free Platform Access</p>
-                    <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> 24/7 Support</p>
+                   <p className={`text-[16px] font-rubik flex items-center gap-2 mb-4 ${togglevalue?'text-gray1':'text-gray2'}`}><img src={right} alt="" /> 5 Social Media Account</p>
+                    <p className={`text-[16px] font-rubik flex items-center gap-2 mb-4 ${togglevalue?'text-gray1':'text-gray2'}`}><img src={right} alt="" /> Free Platform Access</p>
+                    <p className={`text-[16px] font-rubik flex items-center gap-2 mb-9.5 ${togglevalue?'text-gray1':'text-gray2'}`}><img src={right} alt="" /> 24/7 Support</p>
 
-                    <button className={`flex items-center gap-1 py-2 px-4 rounded-4xl border border-gray-700  hover:bg-red1 hover:text-white hover:border-0  ${togglevalue? 'text-gray1 hover:text-white':'text-black hover:text-white border-gray1'}`}>Get Started <IoArrowForward/></button>
+                    <button className={`flex items-center gap-1 py-2 px-4 rounded-4xl border-2 border-gray-700  hover:bg-red1 hover:text-white hover:border-0  ${togglevalue? 'text-gray1 hover:text-white':'text-black hover:text-white border-gray1'}`}>Get Started <IoArrowForward/></button>
 
                 </div>
             </div>
@@ -79,15 +79,15 @@ const PricePlan = () => {
                  <div className='flex flex-col md:flex-row gap-7.5 mt-12.5'>
                     <div className={`p-9.5 rounded-xl  ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] '}`}>
                         <img src={testimonial} alt=""  className='mb-10.5'/>
-                        <p className='text-[18px] font-rubik text-gray1'>A personal portfolio is a curated collection of an individual's professional work, showcasing their skilA personal portfolio is acurated collection of an individual's professional work,showcasing their skills,</p>
-                        <p className='text-[18px] font-rajdhani mt-9'>Cameron Willianson</p>
+                        <p className={`text-[18px] font-rubik ${togglevalue?'text-gray1':'text-gray2'}`}>A personal portfolio is a curated collection of an individual's professional work, showcasing their skilA personal portfolio is acurated collection of an individual's professional work,showcasing their skills,</p>
+                        <p className='text-[18px] font-rajdhani font-bold mt-9'>Cameron Willianson</p>
                         <p className='text-[14px] text-gray1 font-rubik mt-3'>UI/UX Designer</p>
                     </div>
 
                     <div className={`p-9.5 rounded-xl  ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] '}`}>
                         <img src={testimonial} alt=""  className='mb-10.5'/>
-                        <p className='text-[18px] font-rubik text-gray1'>A personal portfolio is a curated collection of an individual's professional work, showcasing their skilA personal portfolio is acurated collection of an individual's professional work,showcasing their skills,</p>
-                        <p className='text-[18px] font-rajdhani mt-9'>Lasle Alexender</p>
+                        <p className={`text-[18px] font-rubik ${togglevalue?'text-gray1':'text-gray2'}`}>A personal portfolio is a curated collection of an individual's professional work, showcasing their skilA personal portfolio is acurated collection of an individual's professional work,showcasing their skills,</p>
+                        <p className='text-[18px] font-rajdhani font-bold mt-9'>Lasle Alexender</p>
                         <p className='text-[14px] text-gray1 font-rubik mt-3'>UI/UX Designer</p>
                     </div>
 

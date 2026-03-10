@@ -23,7 +23,7 @@ const LatestProtfolio = () => {
             <div className='pt-20  md:pt-25'>
             <p className='text-[16px] text-red1 text-center font-rubik '>LATEST PROTFOLIO</p>
             <p className='text-[22px] md:text-[48px] font-rajdhani font-bold text-center'>Transforming Ideas into Exceptional</p>
-            <p className='text-[16px] font-rubik text-gray1 text-center mb-7.5 '>Business consulting consultants provide expert advice and guida businesses to help <br className='hidden md:inline'/>them improve their performance, efficiency, and organizational</p>
+            <p className={`text-[16px] font-rubik text-center mb-7.5 ${togglevalue?'text-gray1':'text-gray2'}`}>Business consulting consultants provide expert advice and guida businesses to help <br className='hidden md:inline'/>them improve their performance, efficiency, and organizational</p>
             </div>
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12.5 mt-15'>
@@ -36,7 +36,7 @@ const LatestProtfolio = () => {
                             togglevalue ? <img src={icon} alt="" /> : <img src={img6} alt="" />
                         }
                     </div>
-                    <p className='text-[16px] font-rubik  text-gray1'>Development coaches</p>
+                    <p className={`text-[16px] font-rubik  ${togglevalue?'text-gray1':'text-gray2'}`}>Development coaches</p>
                     
                 </div>
 
@@ -49,7 +49,7 @@ const LatestProtfolio = () => {
                             togglevalue ? <img src={icon} alt="" /> : <img src={img6} alt="" />
                         }
                     </div>
-                    <p className='text-[16px] font-rubik  text-gray1'>Development coaches</p>
+                    <p className={`text-[16px] font-rubik  ${togglevalue?'text-gray1':'text-gray2'}`}>Development coaches</p>
                 </div>
 
                 <div className=''>
@@ -61,7 +61,7 @@ const LatestProtfolio = () => {
                             togglevalue ? <img src={icon} alt="" /> : <img src={img6} alt="" />
                         }
                     </div>
-                    <p className='text-[16px] font-rubik  text-gray1'>App Development</p>
+                    <p className={`text-[16px] font-rubik  ${togglevalue?'text-gray1':'text-gray2'}`}>App Development</p>
                     
                 </div>
 
@@ -74,7 +74,7 @@ const LatestProtfolio = () => {
                             togglevalue ? <img src={icon} alt="" /> : <img src={img6} alt="" />
                         }
                     </div>
-                    <p className='text-[16px] font-rubik  text-gray1'>Business Development</p>
+                    <p className={`text-[16px] font-rubik  ${togglevalue?'text-gray1':'text-gray2'}`}>Business Development</p>
                     
                 </div>
 
@@ -85,7 +85,7 @@ const LatestProtfolio = () => {
             <p className='text-[22px] md:text-[48px] font-rajdhani font-bold '>Elevated Designs Personalized <br />the best Experiences</p> 
 
             <div className='pb-25'>
-                <div className='pt-10.75 pb-8 md:px-20 hover:bg-red1 flex flex-col md:flex-row justify-between items-center rounded-lg '>
+                <div className='pt-10.75 pb-8 md:px-8 hover:bg-red1 flex flex-col md:flex-row justify-between items-center '>
                    <div className='h-17.5 w-17.5  '>
                     {
                     togglevalue?  <img src={vector} alt="" />:  <img src={border} alt="" />
@@ -93,13 +93,13 @@ const LatestProtfolio = () => {
                    </div>
                     <div>
                         <p className='text-[32px] font-rajdhani font-bold '>UI/UX DESIGN</p>
-                        <p className='text-[18px] font-rajdhani'>21 Done</p>
+                        <p className='text-[18px] font-rajdhani  '>21 Done</p>
                     </div>
-                    <p className='font-rubik text-[16px] leading-7.5'>My work is driven by the belief that thoughtful design and <br />strategic planning can empower brands strategic planning <br />can empower brands</p>
-                    <p className='flex items-center gap-1 font-rajdhani'>READ MORE <IoIosArrowForward/></p>
+                    <p className='font-rubik text-[16px] leading-7.5 '>My work is driven by the belief that thoughtful design and <br />strategic planning can empower brands strategic planning <br />can empower brands</p>
+                    <p className='flex items-center gap-1 font-rajdhani font-bold'>READ MORE <IoIosArrowForward/></p>
                 </div>
 
-                <div className='pt-10.75 pb-8 md:px-20 hover:bg-red1 flex flex-col md:flex-row justify-between items-center rounded-lg my-7.5'>
+                <div className='pt-10.75 pb-8 md:px-10 hover:bg-red1 flex flex-col md:flex-row justify-between items-center  border-y border-gray1 '>
                     <div className='h-17.5 w-17.5  '>
                     {
                     togglevalue?  <img src={vector1} alt="" />:  <img src={border1} alt="" />
@@ -110,10 +110,10 @@ const LatestProtfolio = () => {
                         <p className='text-[18px] font-rajdhani'>21 Done</p>
                     </div>
                     <p className='font-rubik text-[16px] leading-7.5'>My work is driven by the belief that thoughtful design and <br />strategic planning can empower brands strategic planning <br />can empower brands</p>
-                    <p className='flex items-center gap-1 font-rajdhani'>READ MORE <IoIosArrowForward/></p>
+                    <p className='flex items-center gap-1 font-rajdhani font-bold'>READ MORE <IoIosArrowForward/></p>
                 </div>
                 
-                <div className='pt-10.75 pb-8 md:px-20 hover:bg-red1 flex flex-col md:flex-row justify-between items-center rounded-lg '>
+                <div className='pt-10.75 pb-8 md:px-10 hover:bg-red1 flex flex-col md:flex-row justify-between items-center  '>
                     <div className='h-17.5 w-17.5  '>
                     {
                     togglevalue?  <img src={vector2} alt="" />:  <img src={border2} alt="" />
@@ -124,7 +124,7 @@ const LatestProtfolio = () => {
                         <p className='text-[18px] font-rajdhani'>21 Done</p>
                     </div>
                     <p className='font-rubik text-[16px] leading-7.5'>My work is driven by the belief that thoughtful design and <br />strategic planning can empower brands strategic planning <br />can empower brands</p>
-                    <p className='flex items-center gap-1 font-rajdhani'>READ MORE <IoIosArrowForward/></p>
+                    <p className='flex items-center gap-1 font-rajdhani font-bold'>READ MORE <IoIosArrowForward/></p>
                 </div>
             </div>
             </div>

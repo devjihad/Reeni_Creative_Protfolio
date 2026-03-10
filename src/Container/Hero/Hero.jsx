@@ -22,16 +22,16 @@ const Hero = () => {
             <h2 className="text-[38px] md:text-[90px] font-bold leading-12 md:leading-25 font-rajdhani mb-3 md:mb-5 z-40"> <span className="text-[20px] md:text-[28px] font-bold  leading-20">HELLO I'M <br /> </span>Brooklyn Simmons</h2>
             <button className="flex items-center gap-2 py-3 px-5 bg-red1 rounded-3xl text-white">View Profile <IoIosArrowRoundForward/></button>
         </div>
-        <div className="md:absolute top-46.5 right-0 w-82.5 mt-7 md:mt-10">
-            <h4 className="font-rubik mb-5">About Me </h4>
-            <p className="text-gray1 font-rubik text-[16px]  ">A personal <span className="text-red1">portfolio</span> is a collection of to <br />your work, that is achievements, and a <br />skills that <span className="text-red1">web design</span > highlights in your</p>
+        <div className="md:absolute top-46.5 -right-3 w-82.5 mt-7 md:mt-10">
+            <h4 className="font-rubik text-4 mb-5">About Me </h4>
+            <p className={`font-rubik text-[16px] leading-[30px] ${togglevalue?'text-gray1':'text-gray2'}`}>A personal <span className="text-red1">portfolio</span> is a collection of to <br />your work, that is achievements, and a <br />skills that <span className="text-red1">web design</span > highlights in your</p>
 
-            <p className="mt-10 font-rajdhani mb-2">Find me on </p>
+            <p className="mt-10 font-rubik text-4 mb-2.5">Find me on </p>
              <div className='flex items-center gap-2 '>
-                <FaInstagram className={` rounded-full w-8 h-8 p-1 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
-                <TfiFacebook className={` rounded-full w-8 h-8 p-1 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
-                <FaLinkedinIn className={` rounded-full w-8 h-8 p-1 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
-                <FaTwitter  className={` rounded-full w-8 h-8 p-1 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
+                <FaInstagram className={` rounded-full w-10 h-10 p-3.25 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
+                <TfiFacebook className={` rounded-full w-10 h-10 p-3.25 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
+                <FaLinkedinIn className={` rounded-full w-10 h-10 p-3.25 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
+                <FaTwitter  className={` rounded-full w-10 h-10 p-3.25 ${togglevalue ? ' bg-stone-800 ' : ' bg-gray-200 '}`}/>
                
              </div>
         </div>

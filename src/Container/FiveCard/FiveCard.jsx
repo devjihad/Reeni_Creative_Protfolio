@@ -16,22 +16,22 @@ const FiveCard = () => {
             <div className='  grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-7.5'>
                 <div className={`py-8 text-center  md:w-70 h-40.5 rounded-xl ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] border-r-2 border-b-2 border-red1'}`}>
                     <h3 className='text-[48px] font-rajdhani font-bold'>20K+ </h3>
-                    <p className='text-[16px] text-gray1 font-rubik'>Our Project Complite</p>
+                    <p className={`text-[16px] font-rubik ${togglevalue?'text-gray1':'text-gray2'}`}>Our Project Complite</p>
                 </div>
 
                 <div className={`py-8 text-center  md:w-70 h-40.5 rounded-xl ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] border-r-2 border-b-2 border-red1 '}`}>
                     <h3 className='text-[48px] font-rajdhani font-bold'>10K+ </h3>
-                    <p className='text-[16px] text-gray1 font-rubik'>Natural Product</p>
+                    <p className={`text-[16px] font-rubik ${togglevalue?'text-gray1':'text-gray2'}`}>Natural Product</p>
                 </div>
 
                 <div className={`py-8 text-center  md:w-70 h-40.5 rounded-xl ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] border-r-2 border-b-2 border-red1 '}`}>
                     <h3 className='text-[48px] font-rajdhani font-bold'>200+ </h3>
-                    <p className='text-[16px] text-gray1 font-rubik'>Client Review</p>
+                    <p className={`text-[16px] font-rubik ${togglevalue?'text-gray1':'text-gray2'}`}>Client Review</p>
                 </div>
 
                 <div className={`py-8 text-center  md:w-70 h-40.5 rounded-xl ${togglevalue? 'bg-cardBG':' bg-[#F4F4F4] border-r-2 border-b-2 border-red1 '}`}>
                     <h3 className='text-[48px] font-rajdhani font-bold'>1000+ </h3>
-                    <p className='text-[16px] text-gray1 font-rubik'>Our Satisfied Claient</p>
+                    <p className={`text-[16px] font-rubik ${togglevalue?'text-gray1':'text-gray2'}`}>Our Satisfied Claient</p>
                 </div>
             </div>
         </div>

@@ -11,7 +11,9 @@
   --color-red1: #FF494A;
   --color-red2: #FF494A 50%;
   --color-gray1:#9F9F9F;
-  --color-cardBG: #141414
+  --color-cardBG: #141414;
+  --color-gray2: #5D6570;
+  --color-rgb: rgba(255, 73, 74,16% )
 }
 
 @layer utilities {
