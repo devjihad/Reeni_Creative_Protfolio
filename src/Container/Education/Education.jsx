@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import line from '../../assets/custom-line.png'
 import leftImg from '../../assets/Container.png'
 import team from '../../assets/Tpm Our Supported Company Area Start.png'
+import team2 from '../../assets/18.png'
 import { contextData } from '../../Context/Context';
 const Education = () => {
     const {togglevalue, settogglevalue} = useContext(contextData)
@@ -59,7 +60,9 @@ const Education = () => {
                     </div>
                 </div>
             </div>
-            <img src={team} alt=""  className='py-30 hidden md:inline'/>
+           {
+            togglevalue?  <img src={team} alt=""  className='py-30 hidden md:inline'/>:  <img src={team2} alt=""  className='py-30 hidden md:inline'/>
+           }
         </div>
     );
 };

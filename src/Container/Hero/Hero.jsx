@@ -14,7 +14,7 @@ const Hero = () => {
             <div className="md:w-160 mx-auto md:flex md:justify-center relative z-20 "  >
                 <img src={Mainimage} alt="" className="px-5 md:px-0 md:w-150 md:h-200  "/>
             </div>
-            <h2 className="text-[150px] w-189 h-44 font-bold  text-outline font-rajdhani absolute  top-180 left-[600px] -translate-x-1/2 -tranlate-y-1/2 z-30  hidden md:inline    ">WEB DESIGN</h2><br />
+            <h2 className="text-[145px] w-189 h-44 font-bold  text-outline font-rajdhani absolute  top-180 left-[650px] -translate-x-1/2 -tranlate-y-1/2 z-30  hidden md:inline    ">WEB DESIGN</h2><br />
             <h2 className="text-[212px] font-bold  text-outline2 font-rajdhani  absolute top-185 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 hidden md:inline">WEBDESIGN</h2>
         </div>
         <div>

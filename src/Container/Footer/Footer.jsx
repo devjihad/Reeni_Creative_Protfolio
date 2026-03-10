@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import logo from '../../assets/logo.png'
 import blacklogo from '../../assets/blacklogo.png'
+import footerwhite from '../../assets/footerimg.png'
+import footerblack from '../../assets/footerblack.png'
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
-import { TfiFacebook } from "react-icons/tfi";
+import { TfiFacebook, TfiGoogle } from "react-icons/tfi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { contextData } from '../../Context/Context';
@@ -21,6 +23,14 @@ const Footer = () => {
                          togglevalue? <img src={logo} alt="" className='h-10 '/>: <img src={blacklogo} alt="" className='h-10 '/>
                     }
                     <h4 className='text-[50px] font-rajdhani font-bold mt-5.5'>Get Ready <span className='font-normal'> to <br /> Create Great </span></h4>
+
+                    <div className='relative w-[330px] mt-12'>
+                        <input type="email" name="" id="" placeholder='Email Address' />
+                        <div className='absolute right-0 top-0 '>
+                            {togglevalue?<img src={footerblack} alt='dkf'/>: <img src={footerwhite} alt='dkf'/> }
+                        </div>
+                        <hr  className={`mt-7  ${togglevalue? 'text-gray-700' :'text-gray1'}`} />
+                    </div>
                 </div>
 
                 <div className='w-full md:w-1/2  flex flex-col md:flex-row justify-between'>
