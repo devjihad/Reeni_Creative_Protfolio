@@ -5,6 +5,9 @@ import testimonial from '../../assets/testimonial-icon.png'
 import img1 from '../../assets/blog1.png'
 import img2 from '../../assets/blog2.png'
 import img3 from '../../assets/blog3.png'
+import white1 from '../../assets/W1.png'
+import white2 from '../../assets/W2.png'
+import white3 from '../../assets/W3.png'
 import right from '../../assets/right.png'
 import { contextData } from '../../Context/Context';
 const PricePlan = () => {
@@ -28,7 +31,7 @@ const PricePlan = () => {
                     <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> Free Platform Access</p>
                     <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> 24/7 Support</p>
 
-                    <button className='flex items-center gap-1 py-2 px-4 rounded-4xl border border-gray-700 text-gray1 hover:bg-red1 hover:text-white'>Get Started <IoArrowForward/></button>
+                    <button className={`flex items-center gap-1 py-2 px-4 rounded-4xl border border-gray-700  hover:bg-red1 hover:text-white hover:border-0  ${togglevalue? 'text-gray1 hover:text-white':'text-black hover:text-white border-gray1'}`}>Get Started <IoArrowForward/></button>
 
                 </div>
 
@@ -47,7 +50,7 @@ const PricePlan = () => {
                     <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> Life Time Support </p>
                     <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> Marketing Platform</p>
 
-                    <button className='flex items-center gap-1 py-2 px-4 rounded-4xl border border-gray-700 text-gray1 hover:bg-red1 hover:text-white'>Get Started <IoArrowForward/></button>
+                    <button className={`flex items-center gap-1 py-2 px-4 rounded-4xl border border-gray-700  hover:bg-red1 hover:text-white hover:border-0  ${togglevalue? 'text-gray1 hover:text-white':'text-black hover:text-white border-gray1'}`}>Get Started <IoArrowForward/></button>
 
                 </div>
 
@@ -61,7 +64,7 @@ const PricePlan = () => {
                     <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> Free Platform Access</p>
                     <p className='text-[16px] font-rubik text-gray1 flex items-center gap-2 mb-4 '><img src={right} alt="" /> 24/7 Support</p>
 
-                    <button className='flex items-center gap-1 py-2 px-4 rounded-4xl border border-gray-700 text-gray1 hover:bg-red1 hover:text-white'>Get Started <IoArrowForward/></button>
+                    <button className={`flex items-center gap-1 py-2 px-4 rounded-4xl border border-gray-700  hover:bg-red1 hover:text-white hover:border-0  ${togglevalue? 'text-gray1 hover:text-white':'text-black hover:text-white border-gray1'}`}>Get Started <IoArrowForward/></button>
 
                 </div>
             </div>
@@ -99,19 +102,25 @@ const PricePlan = () => {
                 </div>
                 <div className='mt-12 flex flex-col md:flex-row gap-7.5'>
                     <div className='border border-gray-700 rounded-3xl'>
-                        <img src={img1} alt="" />
+                        {
+                            togglevalue? <img src={img1} alt="" />:<img src={white1} alt="" />
+                        }
                         <h4 className='text-[24px] font-rajdhani font-bold p-5 '>Lets bring your ideas to life! <br />Contact me, and lets</h4>
                         <button className='text-[13px] font-rubik text-gray1 px-7.5 pb-7.5 flex gap-1 items-center'>READ MORE <IoIosArrowForward/></button>
                     </div>
 
-                    <div className='border border-gray-700 rounded-xl'>
-                        <img src={img2} alt="" />
+                    <div className='border border-gray-700 rounded-3xl'>
+                        {
+                            togglevalue? <img src={img2} alt="" />:<img src={white2} alt="" />
+                        }
                         <h4 className='text-[24px] font-rajdhani font-bold p-5 '>Lets bring your ideas to life! <br />Contact me, and lets</h4>
                         <button className='text-[13px] font-rubik text-gray1 px-7.5 pb-7.5 flex gap-1 items-center'>READ MORE <IoIosArrowForward/></button>
                     </div>
 
-                    <div className='border border-gray-700 rounded-xl'>
-                        <img src={img3} alt="" />
+                    <div className='border border-gray-700 rounded-3xl'>
+                        {
+                            togglevalue? <img src={img3} alt="" />:<img src={white3} alt="" />
+                        }
                         <h4 className='text-[24px] font-rajdhani font-bold p-5 '>Lets bring your ideas to life! <br />Contact me, and lets</h4>
                         <button className='text-[13px] font-rubik text-gray1 px-7.5 pb-7.5 flex gap-1 items-center'>READ MORE <IoIosArrowForward/></button>
                     </div>
